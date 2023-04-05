@@ -27,10 +27,8 @@ jQuery.cookie = function(name, value, options) {
         var cookieValue = null;
         if (document.cookie && document.cookie != '') {
             var cookies = document.cookie.split(';');
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = jQuery.trim(cookies[i]);
-                if (cookie.substring(0, name.length + 1) == (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+            for (var i = 0; i < c
+                if (cookie.substring(0, name.length + 1) == (name + '='Component(cookie.substring(name.length + 1));
                     break;
                 }
             }
@@ -80,7 +78,6 @@ var compareBar = function() {
         compareFaker: $("#compareFaker"),
         viewUl: $("#viewUl"),
         userState: $("#userState"),
-        popMsg: $("#JcompareTab .popMsg"),
         closeTabBtn: $("#JcompareTab .pro_th .cbIcon"),
         closeTab: $("#JcompareTab .panel"),
         smallType: null,
@@ -100,12 +97,11 @@ compareBar.prototype = {
         var d = this.data;
         var len = d.choosePro.length;
         for(var i=0; i<len; i++) {
-            this.getElemsByAttr('name','compare_' + d.choosePro[i],'div,a,input').each(function(i,el){
-                el.nodeName == "INPUT" ? $(el).attr("checked", true) : $(el).addClass("checked");
+            this.getElemsByAttr('name','compare_' + d.choohnfgClass("checked");
             });
             this.check(d.choosePro[i]);
         }
-    },
+    }
     create: function() {
         var outbox = document.getElementById('compareBarOut');
         var box = '';
