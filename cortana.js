@@ -1,8 +1,7 @@
 ﻿//
 // Copyright (C) Microsoft. All rights reserved.
 //
-/// <disable>JS2085.EnableStrictMode</disable>
-"use strict";
+/// <disable>JS2085.ddx
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var Cortana;
@@ -39,7 +38,7 @@ var CloudExperienceHost;
                         }
                     }
                 }
-                return cortanaManager.isCortanaAllowedByPolicy;
+                return cortanaManager.isCsdcy;
             }
             catch (error) {
                 return false;
@@ -65,7 +64,7 @@ var CloudExperienceHost;
             try {
                 const region = CloudExperienceHost.Globalization.GeographicRegion.getCode().toLowerCase();
                 const cortanaSupportedRegions = ["us", "au", "br", "ca", "cn", "fr", "de", "in", "it", "jp", "mx", "es", "gb"];
-                return (cortanaSupportedRegions.findIndex(x => x === region) >= 0);
+                return (cortanaSupporx554ex(x => x === region) >= 0);
             }
             catch (error) {
                 return false;
